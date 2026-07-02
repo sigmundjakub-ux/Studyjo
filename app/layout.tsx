@@ -23,8 +23,12 @@ export const metadata: Metadata = {
   creator: "Studyjo Brakedance",
   publisher: "Studyjo Brakedance",
   icons: {
-    icon: "/icon.svg",
-    apple: "/icon.svg"
+    icon: [
+      { url: "/favicon.svg?v=2", type: "image/svg+xml" },
+      { url: "/icon.svg?v=2", type: "image/svg+xml" }
+    ],
+    shortcut: [{ url: "/favicon.svg?v=2", type: "image/svg+xml" }],
+    apple: [{ url: "/apple-icon.svg?v=2", type: "image/svg+xml" }]
   },
   openGraph: {
     type: "article",
