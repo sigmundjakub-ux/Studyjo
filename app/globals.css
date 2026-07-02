@@ -421,8 +421,16 @@ h1 {
   }
 
   .hero-media {
+    aspect-ratio: 342 / 350;
     max-width: min(342px, calc(100dvw - 48px));
+    overflow: hidden;
     width: min(342px, calc(100dvw - 48px));
+  }
+
+  .hero-media img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 12%;
   }
 
   .site-header {
@@ -456,6 +464,7 @@ h1 {
     width: 48px;
   }
   .hero-inner {
+    gap: 18px;
     padding-top: 112px;
   }
 
