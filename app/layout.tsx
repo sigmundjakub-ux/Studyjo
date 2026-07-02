@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     url: "/",
     siteName: title,
-    title: "Pravda o RBDYS vyšla najevo!",
+    title: "Omezuje Redbull Dance Your Style v ČR Bboys?",
     description,
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pravda o RBDYS vyšla najevo!",
+    title: "Omezuje Redbull Dance Your Style v ČR Bboys?",
     description,
     images: ["/images/og-placeholder.svg"]
   }
@@ -57,6 +57,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="cs">
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/nar7icn.css" />
+      </head>
       <body>{children}</body>
     </html>
   );

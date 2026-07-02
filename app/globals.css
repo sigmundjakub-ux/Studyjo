@@ -8,7 +8,8 @@
   --muted: #5c5c66;
   --paper: #f7f7f1;
   --shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
-  --headline: "Cooper Black", "Cooper Std Black", "Cooper", Georgia, serif;
+  --adobe-cooper: "cooper-black-std", "Cooper Black", "Cooper Std Black", "Cooper", Georgia, serif;
+  --headline: Georgia, "Times New Roman", serif;
   --body: "Poppins", Arial, Helvetica, sans-serif;
 }
 
@@ -271,28 +272,20 @@ h1 {
 
 .pull-quote {
   background: var(--white);
-  border: 3px solid var(--black);
-  border-radius: 30px;
-  box-shadow: var(--shadow);
-  margin: 40px 0;
-  padding: 22px;
-}
-
-.pull-quote span {
-  background: var(--yellow);
-  color: var(--black);
-  display: inline-flex;
-  font-size: 0.72rem;
-  font-weight: 900;
-  line-height: 1;
-  margin-bottom: 14px;
-  padding: 8px 10px;
+  border: 3px solid var(--blue);
+  border-radius: 8px;
+  box-shadow: none;
+  color: var(--blue);
+  margin: 34px 0;
+  padding: 18px 20px;
 }
 
 .pull-quote p {
   font-family: var(--headline);
-  font-size: clamp(1.75rem, 8vw, 3rem);
-  line-height: 0.98;
+  font-size: clamp(1.38rem, 5.8vw, 2.1rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.05;
   margin: 0;
 }
 
@@ -301,12 +294,59 @@ h1 {
 }
 
 .article-image img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: auto;
   background: var(--blue);
-  border: 4px solid var(--black);
-  border-radius: 30px;
-  object-fit: cover;
+  border: 3px solid var(--blue);
+  border-radius: 8px;
+  object-fit: contain;
   width: 100%;
+}
+
+.instagram-embed {
+  background: var(--blue);
+  border-radius: 8px;
+  color: var(--white);
+  display: grid;
+  gap: 14px;
+  margin: 48px 0 0;
+  padding: 24px;
+}
+
+.instagram-embed p {
+  color: var(--yellow);
+  font-size: 0.84rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+}
+
+.instagram-embed h2 {
+  font-family: var(--headline);
+  font-size: clamp(1.75rem, 7vw, 2.8rem);
+  line-height: 0.98;
+}
+
+.instagram-embed a {
+  align-items: center;
+  background: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 999px;
+  color: var(--blue);
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 900;
+  justify-content: center;
+  line-height: 1;
+  padding: 13px 16px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.instagram-embed a:hover,
+.instagram-embed a:focus-visible {
+  background: var(--yellow);
+  border-color: var(--yellow);
+  color: var(--black);
 }
 
 .related-section {

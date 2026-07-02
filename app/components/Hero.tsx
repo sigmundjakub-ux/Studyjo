@@ -21,7 +21,6 @@ export function Hero({ article }: HeroProps) {
           <img src={article.heroImage.src} alt={article.heroImage.alt} width={900} height={820} />
           <figcaption>{article.heroImage.caption}</figcaption>
         </figure>
-        <p className="dek">{article.perex}</p>
       </div>
     </section>
   );
