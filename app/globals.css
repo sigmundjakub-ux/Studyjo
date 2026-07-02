@@ -200,6 +200,10 @@ h1 {
   overflow-wrap: break-word;
 }
 
+.headline-highlight {
+  color: var(--yellow);
+}
+
 .article-meta {
   align-items: center;
   display: flex;

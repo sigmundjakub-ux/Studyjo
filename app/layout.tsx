@@ -35,10 +35,10 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: "/images/og-placeholder.svg",
+        url: "/images/social-preview.svg",
         width: 1200,
         height: 630,
-        alt: "Studyjo Brakedance editorial placeholder"
+        alt: "Bílé logo Studyjo Brakedance na modrém pozadí"
       }
     ]
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Omezuje Redbull Dance Your Style v ČR Bboys?",
     description,
-    images: ["/images/og-placeholder.svg"]
+    images: ["/images/social-preview.svg"]
   }
 };
 
