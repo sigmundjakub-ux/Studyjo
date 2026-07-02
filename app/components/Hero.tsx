@@ -16,12 +16,12 @@ export function Hero({ article }: HeroProps) {
             <span>{article.date}</span>
             <span>{article.readingTime}</span>
           </p>
-          <p className="dek">{article.perex}</p>
         </div>
         <figure className="hero-media">
           <img src={article.heroImage.src} alt={article.heroImage.alt} width={900} height={820} />
           <figcaption>{article.heroImage.caption}</figcaption>
         </figure>
+        <p className="dek">{article.perex}</p>
       </div>
     </section>
   );
