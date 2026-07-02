@@ -26,16 +26,12 @@ function renderBlock(block: ArticleBlock) {
   if (block.type === "instagram") {
     return (
       <div className="instagram-embed" key={block.id}>
-        <p>{block.account}</p>
-        <h2>{block.title}</h2>
         <blockquote
           className="instagram-media"
           data-instgrm-permalink={block.url}
           data-instgrm-version="14"
         >
-          <a href={block.url} target="_blank" rel="noreferrer">
-            Zobrazit post na Instagramu
-          </a>
+          <a href={block.url} target="_blank" rel="noreferrer" aria-label={block.title} />
         </blockquote>
         <Script src="https://www.instagram.com/embed.js" strategy="afterInteractive" />
       </div>
