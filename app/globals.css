@@ -314,7 +314,7 @@ h1 {
 .instagram-embed {
   display: flex;
   justify-content: center;
-  margin: 48px 0 0;
+  margin: 44px 0 52px;
 }
 
 .instagram-embed .instagram-media {
@@ -322,6 +322,30 @@ h1 {
   max-width: 540px !important;
   min-width: 0 !important;
   width: 100% !important;
+}
+
+.youtube-card {
+  background: rgba(0, 0, 255, 0.06);
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+  color: var(--blue);
+  display: block;
+  margin: 22px 0 32px;
+  padding: 14px 16px;
+  width: 100%;
+}
+
+.youtube-card:hover,
+.youtube-card:focus-visible {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.youtube-title {
+  font-family: var(--body);
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.35;
 }
 
 .related-section {

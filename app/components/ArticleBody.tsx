@@ -41,8 +41,15 @@ function renderBlock(block: ArticleBlock) {
         >
           <a href={block.url} target="_blank" rel="noreferrer" aria-label={block.title} />
         </blockquote>
-        <Script src="https://www.instagram.com/embed.js" strategy="afterInteractive" />
       </div>
+    );
+  }
+
+  if (block.type === "youtube") {
+    return (
+      <a className="youtube-card" href={block.url} target="_blank" rel="noreferrer" key={block.id}>
+        <span className="youtube-title">{block.title}</span>
+      </a>
     );
   }
 
@@ -50,9 +57,12 @@ function renderBlock(block: ArticleBlock) {
 }
 
 export function ArticleBody({ article }: ArticleBodyProps) {
+  const hasInstagramEmbed = article.blocks.some((block) => block.type === "instagram");
+
   return (
     <article className="article-shell" id="article" aria-labelledby="article-title">
       <div className="article-content">{article.blocks.map(renderBlock)}</div>
+      {hasInstagramEmbed ? <Script src="https://www.instagram.com/embed.js" strategy="afterInteractive" /> : null}
     </article>
   );
 }

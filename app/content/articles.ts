@@ -27,7 +27,14 @@ export type InstagramBlock = {
   account: string;
 };
 
-export type ArticleBlock = ParagraphBlock | QuoteBlock | ImageBlock | InstagramBlock;
+export type YouTubeBlock = {
+  id: string;
+  type: "youtube";
+  url: string;
+  title: string;
+};
+
+export type ArticleBlock = ParagraphBlock | QuoteBlock | ImageBlock | InstagramBlock | YouTubeBlock;
 
 export type RelatedArticle = {
   title: string;
@@ -79,16 +86,36 @@ export const articles: Article[] = [
           "V naší malé a relativně poklidné taneční komunitě se během kvalifikačních kol v Brně a Praze rozčeřili vody. Pomyslnou zápalkou se stalo kritické reels video bboye (brejkaře) Zekyho, které rozpoutalo horkou diskuzi nad tím, zda bboys (brejkaři) v ČR nejsou omezováni oproti zahraničí a zda by čistý breakin (breakdance) měl být RBDYS přirozenou součástí. Celosvětově Redbull nyní totiž tanečníky breakinu (breakdance) na RBDYS nezve."
       },
       {
+        id: "ig-zeky-reel",
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DXYsjo8jDvH/",
+        title: "Instagram reel Zekyho k Red Bull Dance Your Style",
+        account: "@zeky"
+      },
+      {
         id: "p-3",
         type: "paragraph",
         text:
           "V minulosti tomu tak vždy nebylo. RBDYS existuje od roku 2018, kdy v CZ vyhrál (původem bboy) Mr. Kriss, který ve světovém finále hezky „naložil“ bboy Neguinovi. Další ročníky v určitém bodě ale Redbull změnil stanovisko a rozhodl se, že akce je určena pro streetdance tanečníky. Klasický bboying má svoji vlastní soutěž Redbull BC One. V rámci diskuze zazněl argument, že pro bboys je přece akce s názvem Redbull BC One. Je to pravda, až na to, že v CZ se už dlouhé roky Redbull BC One nepořádá."
       },
       {
+        id: "yt-mr-kriss-neguin",
+        type: "youtube",
+        url: "https://youtu.be/sNLkY3C5bV0",
+        title: "Video Kriss vs Neguin si můžete připomenout zde"
+      },
+      {
         id: "p-4",
         type: "paragraph",
         text:
           "V reels Zekyho byl kritizovaný příspěvek MöGG (organizátora Brněnské preselekce), kde je skutečně napsáno, že jsou “vítané všechny styly kromě breakinu” a zároveň na vizuálu je napsáno ALLSTYLES (všechny styly). To ale nutně neznamená, že by bboys na akci nemohli dorazit. Jen by se neměli točit na hlavě a “breakovat”. Např. minulý rok se akce zúčastnil bboy Jeep, který tančil „streetstylez“. A nemáme informaci, že by někomu letos z bboys byla zakázána účast. V textu v příspěvku MöGG jde za nás spíš o nevhodnou formulaci, než promyšlené „bannování“ CZ bboys."
+      },
+      {
+        id: "ig-mogg-post",
+        type: "instagram",
+        url: "https://www.instagram.com/p/DWKIII6iaqv/",
+        title: "Instagram příspěvek MöGG k preselekci",
+        account: "@mogg"
       },
       {
         id: "q-2",
