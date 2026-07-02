@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     url: "/",
     siteName: title,
-    title: "Redbull Dance Your Style, bboys a vrtulník na Destiny’s Child",
+    title: "Pravda o RBDYS vyšla najevo!",
     description,
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Redbull Dance Your Style, bboys a vrtulník na Destiny’s Child",
+    title: "Pravda o RBDYS vyšla najevo!",
     description,
     images: ["/images/og-placeholder.svg"]
   }

@@ -46,16 +46,16 @@ export const articles: Article[] = [
   {
     slug: "redbull-dance-your-style-bboys-vrtulnik-destinys-child",
     kicker: "NÁZOR / SATIRA / BREAKING",
-    title: "Redbull Dance Your Style, bboys a vrtulník na Destiny’s Child",
+    title: "Pravda o RBDYS vyšla najevo!",
     author: "Studyjo Brakedance",
     date: "2. 7. 2026",
     readingTime: "5 min čtení",
     perex:
       "Finále jedné z nejviditelnější tanečních akcí je za námi. Vítězem battlu Redbull Dance your Style (RBDYS) se speciálním tanečním konceptem, kdy na známé skladby proti sobě tančí jednotlivci a jejich osud má v rukou celé publikum, vyhrál Sebastian z MöGG. Není pochyb, že formát má velký úspěch a dokázal strhnout pozornost nejen ostřílených tanečníků, ale i široké veřejnosti.",
     heroImage: {
-      src: "/images/hero-placeholder.svg",
-      alt: "Placeholder pro hero obrázek článku Studyjo Brakedance",
-      caption: "Místo pro vlastní hero image z /public/images."
+      src: "/images/ig-post-rbdys.png",
+      alt: "Instagram post Studyjo Brakedance k článku o RBDYS",
+      caption: ""
     },
     blocks: [
       {
