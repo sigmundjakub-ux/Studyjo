@@ -223,7 +223,7 @@ h1 {
   font-weight: 600;
   grid-column: 1;
   line-height: 1.62;
-  margin: 26px 0 0;
+  margin: 0;
   max-width: 660px;
 }
 
@@ -519,16 +519,36 @@ h1 {
   }
 
   .hero-inner {
-    align-items: center;
-    grid-template-columns: minmax(0, 0.95fr) minmax(340px, 0.72fr);
+    align-items: stretch;
+    gap: 34px 56px;
+    grid-template-columns: minmax(0, 0.88fr) minmax(460px, 0.9fr);
     padding: 136px 40px 78px;
   }
 
+  .hero-copy {
+    align-self: end;
+  }
+
+  .dek {
+    align-self: start;
+  }
+
   .hero-media {
+    align-self: stretch;
     grid-column: 2;
     grid-row: 1 / span 2;
-    justify-self: end;
-    max-width: 470px;
+    justify-self: stretch;
+    max-width: none;
+    min-height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .hero-media img {
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
   }
 
   .article-shell {

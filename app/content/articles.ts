@@ -67,12 +67,6 @@ export const articles: Article[] = [
     },
     blocks: [
       {
-        id: "p-1",
-        type: "paragraph",
-        text:
-          "Finále jedné z nejviditelnější tanečních akcí je za námi. Vítězem battlu Redbull Dance your Style (RBDYS) se speciálním tanečním konceptem, kdy na známé skladby proti sobě tančí jednotlivci a jejich osud má v rukou celé publikum, vyhrál Sebastian z MöGG. Gratulujeme. Není pochyb, že formát má velký úspěch a dokázal strhnout pozornost nejen ostřílených tanečníků, ale i široké veřejnosti."
-      },
-      {
         id: "q-1",
         type: "quote",
         text: "Co ale „breakdance“? Patří tam?"
