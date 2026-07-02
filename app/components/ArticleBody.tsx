@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { Article, ArticleBlock } from "../content/articles";
 
 type ArticleBodyProps = {
@@ -18,7 +17,7 @@ function renderBlock(block: ArticleBlock) {
   if (block.type === "image") {
     return (
       <figure className="article-image" key={block.id}>
-        <Image src={block.src} alt={block.alt} width={900} height={675} />
+        <img src={block.src} alt={block.alt} width={900} height={675} />
         <figcaption>{block.caption}</figcaption>
       </figure>
     );

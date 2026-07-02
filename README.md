@@ -5,8 +5,8 @@ MVP editorial webu pro satirické breakingové médium. Homepage je v první ver
 ## Lokální spuštění
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm run dev
 ```
 
 Web poběží na `http://localhost:3000`.
@@ -30,5 +30,5 @@ Aktuálně je použit placeholder `public/images/hero-placeholder.svg`.
 1. Nahraj projekt do Git repozitáře.
 2. Ve Vercelu zvol `New Project`.
 3. Framework bude detekovaný jako Next.js.
-4. Build command: `pnpm build`.
+4. Build command: `npm run build`.
 5. Output directory nech prázdný, Vercel použije výchozí Next.js nastavení.

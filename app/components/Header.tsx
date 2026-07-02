@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const navItems = ["Články", "Archiv", "O nás", "Instagram"];
@@ -7,14 +6,7 @@ export function Header() {
   return (
     <header className="site-header" aria-label="Hlavní navigace">
       <Link className="brand-lockup" href="/" aria-label="Studyjo Brakedance homepage">
-        <Image
-          src="/brand/sb-logo.svg"
-          alt=""
-          className="brand-mark"
-          width={54}
-          height={54}
-          priority
-        />
+        <img src="/brand/sb-logo.svg" alt="" className="brand-mark" width={54} height={54} />
         <span className="brand-copy">
           <strong>Studyjo Brakedance</strong>
           <span>Satirické médium o breakingu</span>

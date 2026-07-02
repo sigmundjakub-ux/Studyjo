@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { Article } from "../content/articles";
 
 type HeroProps = {
@@ -20,13 +19,7 @@ export function Hero({ article }: HeroProps) {
           <p className="dek">{article.perex}</p>
         </div>
         <figure className="hero-media">
-          <Image
-            src={article.heroImage.src}
-            alt={article.heroImage.alt}
-            width={900}
-            height={820}
-            priority
-          />
+          <img src={article.heroImage.src} alt={article.heroImage.alt} width={900} height={820} />
           <figcaption>{article.heroImage.caption}</figcaption>
         </figure>
       </div>
