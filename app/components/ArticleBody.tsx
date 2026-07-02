@@ -15,9 +15,17 @@ function renderBlock(block: ArticleBlock) {
   }
 
   if (block.type === "image") {
+    const image = <img src={block.src} alt={block.alt} width={900} height={675} />;
+
     return (
       <figure className="article-image" key={block.id}>
-        <img src={block.src} alt={block.alt} width={900} height={675} />
+        {block.href ? (
+          <a href={block.href} target="_blank" rel="noreferrer">
+            {image}
+          </a>
+        ) : (
+          image
+        )}
         <figcaption>{block.caption}</figcaption>
       </figure>
     );

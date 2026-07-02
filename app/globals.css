@@ -283,8 +283,8 @@ h1 {
 .pull-quote p {
   font-family: var(--headline);
   font-size: clamp(1.38rem, 5.8vw, 2.1rem);
-  font-style: italic;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 900;
   line-height: 1.05;
   margin: 0;
 }
@@ -293,12 +293,17 @@ h1 {
   margin: 44px 0;
 }
 
+.article-image a {
+  display: block;
+}
+
 .article-image img {
   aspect-ratio: auto;
-  background: var(--blue);
-  border: 3px solid var(--blue);
+  background: transparent;
+  border: 0;
   border-radius: 8px;
-  object-fit: contain;
+  height: auto;
+  object-fit: initial;
   width: 100%;
 }
 

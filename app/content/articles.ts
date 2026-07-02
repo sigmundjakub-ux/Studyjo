@@ -16,6 +16,7 @@ export type ImageBlock = {
   src: string;
   alt: string;
   caption: string;
+  href?: string;
 };
 
 export type InstagramBlock = {
@@ -105,7 +106,8 @@ export const articles: Article[] = [
         type: "image",
         src: "/images/rbdys-meme.jpg",
         alt: "Instagram story screenshot Red Bull CZ z Brna s textem V Brně prý gravitace neexistuje",
-        caption: ""
+        caption: "",
+        href: "https://www.instagram.com/redbullcz/p/DaI1JfaDaGX/"
       },
       {
         id: "q-3",
